@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", function() {
         
     let rot_state = {beta: camera.beta, alpha: camera.alpha};
 
-    for (let i = 1; i <= 30; i++) {
+    for (let i = 1; i <= 1; i++) {
       let mat = new BABYLON.StandardMaterial("mat", scene);
       mat.emissiveTexture = new BABYLON.Texture("./image-plan-3d/"+ i.toString() +".png", scene);
       mat.opacityTexture = new BABYLON.Texture("./image-plan-3d/"+ i.toString() +".png", scene, false, true, BABYLON.Texture.NEAREST_SAMPLINGMODE);
@@ -91,7 +91,7 @@ window.addEventListener("DOMContentLoaded", function() {
     //   DEMO.pointerDragBehavior.enabled = DEMO.dragBehavior;
     // }
   });
-  /*let loadAssets = async () => {
+  let loadAssets = async () => {
     for (let i = 2; i <= 30; i++) {
       let mat = new BABYLON.StandardMaterial("mat", scene);
       mat.emissiveTexture = new BABYLON.Texture("./image-plan-3d/"+ i.toString() +".png", scene);
@@ -99,6 +99,6 @@ window.addEventListener("DOMContentLoaded", function() {
       materials.push(mat);
     }
   }
-  loadAssets();*/
+  loadAssets();
 
 });
