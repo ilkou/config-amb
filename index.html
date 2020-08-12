@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+  <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>BABYLON JS</title>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <ul class="switch-container">
+    <li id="scene1" onclick="">
+      <i class="fa fa-building fa-3x"></i><div>URBAN</div>
+    </li>
+    <li id="scene2" onclick="">
+      <i class="fa fa-building fa-3x"></i><div>URBAN</div>
+    </li>
+    <li id="scene3" onclick="">
+      <i class="fa fa-building fa-3x"></i><div>URBAN</div>
+    </li>
+    <li id="scene4" class="active" onclick="">
+      <i class="fa fa-building fa-3x"></i><div>URBAN</div>
+    </li>
+  </ul>
+  <ul class="events-container" id="events-container-id">
+      <!-- <li class="events" id="hand-pointer">
+        <i class="fa fa-hand-pointer fa-lg"></i>
+      </li> -->
+      <li class="events" id="full-screen">
+        <i class="fa fa-arrows-alt fa-lg"></i>
+      </li>
+      <li class="events" id="left">
+        <i class="fa fa-arrow-left fa-lg"></i>
+      </li>
+      <li class="events" id="right">
+        <i class="fa fa-arrow-right fa-lg"></i>
+      </li>
+      <li class="events" id="plus">
+        <i class="fa fa-plus fa-lg"></i>
+      </li>
+      <li class="events" id="minus">
+        <i class="fa fa-minus fa-lg"></i>
+      </li>
+      <li id="eventsManager" style="background-color: #acdeee; color: white;">
+          <i class="fa fa-bars fa-lg"></i>
+      </li>
+  </ul>
+  <script src="App.js"></script>
+</body>
+</html>

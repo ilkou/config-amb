@@ -1,0 +1,112 @@
+html, body {
+  overflow: hidden;
+  width   : 100%;
+  height  : 100%;
+  margin  : 0;
+  padding : 0;
+  background: rgb(39, 46, 50);
+}
+#canvas {
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+ul.switch-container {
+  list-style: none;
+  position: absolute;
+  left: 0%;
+  top: 10%;
+  color: #9e9e9e;
+  padding: 0;
+}
+
+ul.switch-container li {
+  height: 115px;
+  width: 115px;
+  line-height: 115px;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,.2);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  transition: all .4s ease;
+}
+
+ul.switch-container li:hover {
+  background: #acdeee;
+  color: white;
+}
+
+ul.switch-container li div {
+  position: relative;
+  top: -80px;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+ul.switch-container li.active {
+  background: #acdeee;
+  color: white;
+}
+
+ul.events-container {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  position: absolute;
+  right: 0%;
+  bottom: 3%;
+  color: #9e9e9e;
+  padding: 0;
+}
+
+ul.events-container li {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,.2);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  transition: all .4s ease;
+  color: #9e9e9e;
+}
+
+ul.events-container li.events {
+  display: block;
+}
+
+ul.events-container li div {
+  position: relative;
+  top: -80px;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+ul.events-container li:hover {
+  color: white;
+}
+ul.events-container li > * {
+  pointer-events: none;
+}
+ul.events-container li.active {
+  background: #acdeee;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  ul.switch-container li {
+    height: 80px;
+    width: 80px;
+    line-height: 100px;
+  }
+  ul.switch-container li div {
+    display: none;
+  }
+}
