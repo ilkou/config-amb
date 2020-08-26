@@ -18,8 +18,8 @@ window.addEventListener("DOMContentLoaded", function() {
 
     for (let i = 1; i <= 1; i++) {
       let mat = new BABYLON.StandardMaterial("mat", scene);
-      mat.emissiveTexture = new BABYLON.Texture("./image-plan-3d/"+ i.toString() +".png", scene);
-      mat.opacityTexture = new BABYLON.Texture("./image-plan-3d/"+ i.toString() +".png", scene, false, true, BABYLON.Texture.NEAREST_SAMPLINGMODE);
+      mat.emissiveTexture = new BABYLON.Texture("./image-plan-3d/" + i.toString() + ".png", scene);
+      mat.opacityTexture = new BABYLON.Texture("./image-plan-3d/" + i.toString() + ".png", scene, false, true, BABYLON.Texture.NEAREST_SAMPLINGMODE);
       materials.push(mat);
     }
     
